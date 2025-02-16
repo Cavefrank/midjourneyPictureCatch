@@ -4,10 +4,10 @@ import discord
 import requests
 
 # 你的 Discord Bot Token
-TOKEN = 'YOUR_DISCORD_BOT_TOKEN'
+TOKEN = "Token码"
 
 # 保存图片的本地文件夹
-SAVE_FOLDER = 'midjourney_images'
+SAVE_FOLDER = 'G:\\'
 
 # 确保文件夹存在
 if not os.path.exists(SAVE_FOLDER):
