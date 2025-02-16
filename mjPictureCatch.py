@@ -4,7 +4,7 @@ import discord
 import requests
 
 # 你的 Discord Bot Token
-TOKEN = "Token码"
+TOKEN = "Token码1"
 
 # 保存图片的本地文件夹
 SAVE_FOLDER = 'G:\\'

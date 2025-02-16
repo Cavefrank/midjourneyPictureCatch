@@ -33,4 +33,4 @@ async def hello(ctx):
 
 if __name__ == "__main__":
     # ✅ 安全启动方式
-    bot.run("Token码")
+    bot.run("Token码1")
