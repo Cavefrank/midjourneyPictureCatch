@@ -6,7 +6,7 @@ from Upscaled_Picture_save import create_directory, specific_text_check
 
 intents = discord.Intents.default()
 intents.message_content = True
-SAVE_FOLDER = 'G:\\BaiduSyncdisk'
+SAVE_FOLDER = 'G:\\BaiduSyncdisk\\0217生成库'
 # 确保文件夹存在
 create_directory(SAVE_FOLDER)
 
@@ -25,12 +25,13 @@ bot = MyBot(
     proxy="http://127.0.0.1:10809"
 )
 
-
+# 反馈登录结果
 @bot.event
 async def on_ready():
     print(f'Logged in as {bot.user}')
     print("登陆成功")
 
+# 自动获取2K图片
 @bot.event
 async def on_message(message):
     if message.author == bot.user:
@@ -41,4 +42,4 @@ async def on_message(message):
 if __name__ == "__main__":
     # ✅ 安全启动方式
     # 包含具体Token的代码会被拒绝推送
-    bot.run("Token")
+    bot.run(input("请输入Token"))

@@ -56,5 +56,3 @@ async def specific_text_check(SAVE_FOLDER, message):
                 await download_file(image_url, filename, proxy="http://127.0.0.1:10809")  # 传递代理参数
         else:
             print("消息中包含目标文本，但没有附件")
-    else:
-        print("未发现包含目标文本的消息")
