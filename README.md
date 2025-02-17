@@ -1,2 +1,3 @@
 # midjourneyPictureCatch
-A repository which could catch picture from midjourney
+1.0 版本：实现自动下载2K放大版图片功能
+1.1 版本：实现自动生成完整版提示词功能
