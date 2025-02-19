@@ -6,7 +6,7 @@ from Upscaled_Picture_save import create_directory, specific_text_check
 
 intents = discord.Intents.default()
 intents.message_content = True
-SAVE_FOLDER = 'G:\\BaiduSyncdisk\\0217生成库'
+SAVE_FOLDER = 'G:\\BaiduSyncdisk\\生成库'
 # 确保文件夹存在
 create_directory(SAVE_FOLDER)
 
@@ -53,9 +53,11 @@ async def on_command_error(ctx, error):
 
 # 待完善
 @bot.command()
-async def F(ctx, *, prompt: str): # 需要使用*获取所有输入内容，否则自动按照空格隔开
+async def F(ctx, *, prompt: str):  # 需要使用*获取所有输入内容，否则自动按照空格隔开
     """输入部分提示词，自动发送完整提示词"""
+    await ctx.send(f"/imagine prompt: {prompt} --ar 9:20 --q 2 --v 6.1 --style raw --s 50")
     await ctx.send(f"/imagine prompt: {prompt} --ar 9:20 --q 2 --v 6.1 --style raw --s 218")
+    await ctx.send(f"/imagine prompt: {prompt} --ar 9:20 --q 2 --v 6.1 --style raw --s 240")
 
 
 if __name__ == "__main__":
